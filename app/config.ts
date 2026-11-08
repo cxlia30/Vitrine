@@ -1,21 +1,11 @@
-{
-  "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [{ "name": "next" }],
-    "paths": { "@/*": ["./*"] }
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
-}
+// ─────────────────────────────────────────────────────────────
+// LES 2 SEULES VALEURS À MODIFIER POUR L'INSTANT
+// ─────────────────────────────────────────────────────────────
+
+// Le lien de paiement Stripe (commence par https://buy.stripe.com/...).
+// On le créera ensemble à l'étape Stripe. En attendant, le bouton
+// fait défiler la page jusqu'à l'offre.
+export const LIEN_PAIEMENT = "#offre";
+
+// L'email où tes clients te contactent (remboursement, questions).
+export const EMAIL_CONTACT = "[TON EMAIL PRO]";
